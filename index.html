@@ -18,22 +18,31 @@
             background: #fff;
         }
 
+        /* HEADER LAYOUT */
         header {
             padding: 4rem 2rem;
             display: flex;
-            justify-content: left;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 3rem;
         }
-        
+
         .header-content {
             background: #131420;
             color: white;
             padding: 3rem 4rem;
             border-radius: 20px;
-            max-width: 80%;
             width: 800px;
-            margin-left: +650px;
+            margin-left: 150px;
         }
-        
+
+        .header-image {
+            width: 250px;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
         header h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
@@ -44,6 +53,7 @@
             opacity: 0.9;
         }
 
+        /* MAIN CONTENT */
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -51,11 +61,10 @@
         }
 
         .intro {
-            text-align: center;
-            margin-bottom: 4rem;
+            text-align: left;
             max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 150px;
+            margin-bottom: 4rem;
         }
 
         .intro h2 {
@@ -69,6 +78,7 @@
             color: #666;
         }
 
+        /* GALLERY */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -126,6 +136,7 @@
             opacity: 0.6;
         }
 
+        /* CONTACT */
         .contact {
             text-align: center;
             padding: 3rem 2rem;
@@ -168,26 +179,32 @@
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
+            header {
+                flex-direction: column;
+                text-align: center;
             }
 
-            .gallery {
-                grid-template-columns: 1fr;
+            .header-content {
+                margin-left: 0;
+                width: 100%;
             }
 
-            .intro h2 {
-                font-size: 1.5rem;
+            .intro {
+                margin-left: 0;
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
+
     <header>
         <div class="header-content">
             <h1>Oliver Boertjens</h1>
             <p>Game Artist</p>
         </div>
+
+        <img src="headerimage.png" class="header-image" alt="Header Image">
     </header>
 
     <div class="container">
@@ -207,9 +224,7 @@
             </div>
 
             <div class="project">
-                <div class="project-image">
-                    [Project Image]
-                </div>
+                <div class="project-image">[Project Image]</div>
                 <div class="project-info">
                     <h3>Environment Art</h3>
                     <p>Stylized forest environment with modular assets for an indie game project.</p>
@@ -218,9 +233,7 @@
             </div>
 
             <div class="project">
-                <div class="project-image">
-                    [Project Image]
-                </div>
+                <div class="project-image">[Project Image]</div>
                 <div class="project-info">
                     <h3>Concept Art</h3>
                     <p>Original concept designs for weapons and props in a sci-fi setting.</p>
@@ -229,9 +242,7 @@
             </div>
 
             <div class="project">
-                <div class="project-image">
-                    [Project Image]
-                </div>
+                <div class="project-image">[Project Image]</div>
                 <div class="project-info">
                     <h3>3D Modeling</h3>
                     <p>High-poly to low-poly workflow demonstration with baked details.</p>
@@ -240,9 +251,7 @@
             </div>
 
             <div class="project">
-                <div class="project-image">
-                    [Project Image]
-                </div>
+                <div class="project-image">[Project Image]</div>
                 <div class="project-info">
                     <h3>Game Asset Pack</h3>
                     <p>Complete asset collection for a 2D platformer game.</p>
@@ -251,9 +260,7 @@
             </div>
 
             <div class="project">
-                <div class="project-image">
-                    [Project Image]
-                </div>
+                <div class="project-image">[Project Image]</div>
                 <div class="project-info">
                     <h3>Character Animations</h3>
                     <p>Rigging and animation showcase for game-ready characters.</p>
@@ -275,13 +282,6 @@
     <footer>
         <p>&copy; 2024 Oliver Boertjens. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
