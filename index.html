@@ -19,10 +19,18 @@
         }
 
         header {
-            background: #131420;
-            color: white;
             padding: 4rem 2rem;
             text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-content {
+            background: #131420;
+            color: white;
+            padding: 3rem 4rem;
+            border-radius: 20px;
+            max-width: 600px;
         }
 
         header h1 {
@@ -175,8 +183,10 @@
 </head>
 <body>
     <header>
-        <h1>Oliver Boertjens</h1>
-        <p>Game Artist</p>
+        <div class="header-content">
+            <h1>Oliver Boertjens</h1>
+            <p>Game Artist</p>
+        </div>
     </header>
 
     <div class="container">
@@ -187,7 +197,7 @@
 
         <div class="gallery">
             <div class="project">
-                <img src="TendtotheGarden.png" alt="Project description" style="width: 100%; height: 250px; object-fit: cover;">
+                <img src="TendtotheGarden.png" alt="Tend to the Garden" style="width: 100%; height: 250px; object-fit: cover;">
                 <div class="project-info">
                     <h3>Tend to the Garden</h3>
                     <p>Character design for a fantasy RPG. Created in Blender and textured in Substance Painter.</p>
@@ -262,10 +272,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Oliver Boertjens. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
-
