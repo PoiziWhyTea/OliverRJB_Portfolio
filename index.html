@@ -20,11 +20,10 @@
 
         header {
             padding: 4rem 2rem;
-            text-align: left + 500;
             display: flex;
-            justify-content: left + 500;
+            justify-content: left; /* or flex-start */
         }
-
+        
         .header-content {
             background: #131420;
             color: white;
@@ -32,8 +31,9 @@
             border-radius: 20px;
             max-width: 80%;
             width: 1000px;
+            margin-left: -100px; /* moves the box slightly left */
         }
-
+        
         header h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
@@ -51,7 +51,7 @@
         }
 
         .intro {
-            text-align: left + 500;
+            text-align: left;
             margin-bottom: 4rem;
             max-width: 700px;
             margin-left: auto;
@@ -277,6 +277,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
